@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.typing-indicator {
+  @apply flex items-center gap-1; /* Use Tailwind for flexbox and spacing */
+}
+
+.typing-indicator span {
+  @apply w-2 h-2 bg-indigo-500 rounded-full; /* Use Tailwind for sizing, color, and rounding */
+  animation: typing 1.2s infinite cubic-bezier(0.25, 0.1, 0.25, 1); /* Smoother easing */
+}
+
+.typing-indicator span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes typing {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.6; /* Add opacity changes for subtle effect */
+  }
+  50% {
+    transform: translateY(-6px); /* Slightly larger bounce */
+    opacity: 1; /* Fully visible at the peak */
+  }
+}
+
+.btn {
+  z-index: 10; /* Ensure other buttons have lower z-index */
+  
+}
+
+/* Fix Overlapping Issue */
+body {
+  position: relative; /* Ensure the body context allows z-index stacking */
+  
+}
