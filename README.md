@@ -17,11 +17,7 @@ React.js (Frontend for user interaction)
 
 🛠 Installation & Setup
 1️⃣ Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/breast-cancer-ai.git
-cd breast-cancer-ai
+git clone https://github.com/affanjan007/Breast-Cancer-Prediction.git
 pip install -r requirements.txt (in seperate terminal)
 npm run dev (in seperate terminal)
 
